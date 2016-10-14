@@ -6,11 +6,15 @@
     display: inline-block;
     float: left;
     text-align: left !important;
-    margin-top: 6px;
+    margin-top: 1px;
+}
+
+.wrapper.style1.first {
+    margin-top: -105px;
 }
 
 #nav ul {
-    margin-bottom: 0;
+    margin-bottom: 0px;
 }
 
 #nav a {
