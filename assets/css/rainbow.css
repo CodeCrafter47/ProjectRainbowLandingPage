@@ -1,72 +1,55 @@
-#nav {
-    background-color: rgba(40, 40, 40, 0.6);
-}
+    #myHeader {
+        background: transparent;
+        padding-bottom: 0px;
+    }
+    
+    .w3-card-2 {
+        background-color: rgba(40, 40, 40, 0.6);
+        color: white;
+    }
+    
+    body {
+        background: URL("http://project-rainbow.org/images/minecraft.png") no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
 
-#nav li.logo {
-    display: inline-block;
-    float: left;
-    text-align: left !important;
-    margin-top: 1px;
-}
+    .w3-navbar {
+        padding-top: 0px;
+        background-color: rgba(40, 40, 40, 0.4);
+    }
+    .w3-navbar {
+        color: white;
+    }
 
-.wrapper.style1.first {
-    margin-top: -105px;
-}
+    .rainbow-plugin {
+        position: relative;
+        display: inline-block;
+        border: 1px solid rgba(40, 40, 40, 0.6);
+        padding: 15px;
+        margin: 5px;
+        border-radius: 5px;
+        background-color: rgba(40, 40, 40, 0.7);
+        color: white;
+    }
 
-#nav ul {
-    margin-bottom: 0px;
-}
+    .rainbow-plugin a {
+        text-decoration: none;
+    }
 
-#nav a {
-    text-align: center;
-    position: relative;
-    display: block;
-    color: #fff;
-}
-
-.wrapper.style1 {
-    background-image: url("../../images/minecraft.png");
-    background-repeat: no-repeat;
-    background-size: cover
-}
-
-.info-text {
-    color: white;
-    background-color: rgba(40, 40, 40, 0.4);
-}
-
-.box.style3 {
-    background-color: rgba(40, 40, 40, 0.4);
-}
-
-input[type="button"],
-input[type="submit"],
-input[type="reset"],
-button,
-.button {
-    text-shadow: -1px -1px 0.5px rgba(0, 0, 0, 0.5);
-    box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.5), inset 0px 2px 1px 0px rgba(255, 255, 255, 0.75);
-    background-color: #43B3E0;
-}
-
-input[type="button"]:hover,
-input[type="submit"]:hover,
-input[type="reset"]:hover,
-button:hover,
-.button:hover {
-    background-color: #43bff0;
-    color: #fff !important;
-}
-
-input[type="button"]:active,
-input[type="submit"]:active,
-input[type="reset"]:active,
-button:active,
-.button:active {
-    background-color: #3BA8D3;
-    top: 1px;
-}
-
-.icon.featured.white {
-    color: white;
-}
+    .rainbow-plugin:hover {
+        background-color: rgba(40, 40, 40, 0.9);
+    }
+    
+    .rainbow-padding {
+       padding: 40px;
+    }
+    
+    .rainbow-row {
+        background-color: rgba(40, 40, 40, 0.3);
+    }
+    span.fa {
+        font-size: 50px;
+    }

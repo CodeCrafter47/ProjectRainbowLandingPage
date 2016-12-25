@@ -1,236 +1,221 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
 <head>
     <title>Project Rainbow</title>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <!--[if lte IE 8]>
-    <script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-    <link rel="stylesheet" href="assets/css/main.css"/>
-    <link rel="stylesheet" href="assets/css/rainbow.css"/>
-    <!--[if lte IE 8]>
-    <link rel="stylesheet" href="assets/css/ie8.css"/><![endif]-->
-    <!--[if lte IE 9]>
-    <link rel="stylesheet" href="assets/css/ie9.css"/><![endif]-->
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="http://www.w3schools.com/lib/w3.css" rel="stylesheet">
+    <link href="http://www.w3schools.com/lib/w3-theme-teal.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets\css\rainbow.css" rel="stylesheet">
 </head>
 <body>
 
-<!-- Nav -->
-<nav id="nav">
-    <ul class="container">
-        <li class="logo"><img src="images/logo.png" style='height: auto; max-height: 45px'></li>
-        <li><a href="#starting">Get Rainbow</a></li>
-        <li><a href="#plugins">Plugins</a></li>
-        <li><a href="#contribute">Contribute</a></li>
-        <li><a href="http://project-rainbow.org/site/">Forums</a></li>
+    <!-- Side Navigation -->
+    <ul class="w3-navbar w3-theme-2">
+        <li>
+            <a class="w3-theme-blue w3-padding-8" href="javascript:void(0)">Home</a>
+        </li>
+        <li>
+            <a class="w3-padding-8" href="#starting">Get Rainbow</a>
+        </li>
+        <li class="w3-dropdown-hover">
+            <a class="w3-padding-8" href="http://www.project-rainbow.org/site/index.php?action=downloads">Plugins&nbsp;<i class=
+            "fa fa-caret-down"></i></a>
+            <div class="w3-dropdown-content w3-card-4">
+                <a class="w3-padding-8" href="http://www.project-rainbow.org/site/index.php?action=downloads">Offical List</a>
+                <a class="w3-padding-8" href="https://isaiahpatton.github.io/RainbowPluginList">Fanmade list</a>
+            </div>
+        </li>
+        <li>
+            <a class="w3-padding-8" href="#contribute">Contribute</a>
+        </li>
+        <li>
+            <a class="w3-padding-8" href="http://www.project-rainbow.org/site/">Forums</a>
+        </li>
+        <li class="w3-right">
+            <a class="w3-padding-8" href="javascript:void(0)"><i class="fa fa-search"></i></a>
+        </li>
     </ul>
-</nav>
+    
+    <!-- Header -->
+    <header class="w3-container w3-padding" id="myHeader">
+        <div class="w3-center">
+            <h1 class="w3-xlarge w3-animate-bottom"><img id="logo" height="140px" src="http://www.project-rainbow.org/images/logo.png" width="550"></h1>
+        </div>
+    </header>
 
-<!-- Home -->
-<div class="wrapper style1 first">
-    <article class="container" id="top">
-        <center>
-            <img src="images/logo.png">
-
-            <p class="info-text"><strong style="color:white">Welcome to <strong><a style="color:white"
-                                                                                   href="http://project-rainbow.org">Project-Rainbow</a></strong>
-                <br>A modded Minecraft server with lots of awesome built-in features.<br>
-                Customizable through plugins.</strong></p>
-        </center>
-        <div class="row">
-            <div class="4u 12u(mobile)">
-                <section class="box style3">
-                    <span class="icon featured white fa-download"></span>
-                    <a href="#starting" class="button alt scrolly">Get Rainbow</a>
-                </section>
-            </div>
-            <div class="4u 12u(mobile)">
-                <section class="box style3">
-                    <span class="icon featured white fa-comments"></span>
-                    <a href="http://project-rainbow.org/site/" class="button alt">Forums</a>
-                </section>
-            </div>
-            <div class="4u 12u(mobile)">
-                <section class="box style3">
-                    <span class="icon featured white fa-wrench"></span>
-                    <a href="#plugins" class="button alt scrolly">Plugins</a>
-                </section>
+    <div class="w3-row-padding w3-center w3-margin-top">
+        <div class="w3-third">
+            <div class="w3-card-2 w3-padding-top" style="min-height:260px">
+                <p><b>A modded Minecraft server</b></p>
+                <hr></hr>
+                <span class="fa fa-download"></span>
+                <h4><a href="#starting" class="w3-btn">Get Rainbow</a></h4><br>
+                
             </div>
         </div>
-    </article>
-</div>
-
-<!-- Getting started -->
-<div class="wrapper style2">
-    <article id="starting">
-        <header>
-            <h2>Getting Started</h2>
-            <p>Follow these steps to setup your Rainbow server!</p>
-        </header>
-        <div class="container">
-            <div class="row">
-                <div class="4u 12u(mobile)">
-                    <section class="box style1">
-                        <h3>Step 1</h3>
-                        <span class="icon featured fa-download"></span>
-                        <p>Get the latest files.</p>
-                        <a href="https://ci.codecrafter47.de/job/Rainbow/lastSuccessfulBuild/"
-                           class="button">Download</a>
-                    </section>
-                </div>
-                <div class="4u 12u(mobile)">
-                    <section class="box style1">
-                        <h3>Step 2</h3>
-                        <span class="icon featured fa-gear"></span>
-                        <h3>Run</h3>
-                        <p>Run Rainbow by selecting the JAR in your server's control panel, or running the included
-                            start script.</p>
-                    </section>
-                </div>
-                <div class="4u 12u(mobile)">
-                    <section class="box style1">
-                        <h3>Step 3</h3>
-                        <span class="icon featured fa-wrench"></span>
-                        <h3>Customize</h3>
-                        <p>Customize your server by installing plugins or customizing the Rainbow.properties file.</p>
-                    </section>
-                </div>
+        <div class="w3-third">
+            <div class="w3-card-2 w3-padding-top" style="min-height:260px">
+                <p><b>with lots of awesome built-in features.</b></p>
+                <hr>
+                <span class="fa fa-comments"></span>
+                <h4><a href="http://www.project-rainbow.org/site/" class="w3-btn">Forums</a></h4>
             </div>
         </div>
-        <footer>
-            <p>Not enough?</p>
-            <a href="#plugins" class="button big scrolly"> Check out some of our featured plugins!</a>
-        </footer>
-    </article>
-</div>
-
-<!-- Featured Plugins -->
-<div class="wrapper style3">
-    <article id="plugins">
-        <header>
-            <h2>These are the most popular plugins</h2>
-            <p>Don't worry, there are plenty more!</p>
-        </header>
-        <div class="container">
-            <div class="row">
-                <div class="4u 12u(mobile)">
-                    <section class="box style1">
-                        <span class="icon featured fa-heart"></span>
-                        <h3><a href="http://www.project-rainbow.org/site/index.php?action=downloads;sa=view;down=343">RainbowMarriage</a>
-                        </h3>
-                        <p>By DoingItWell</p>
-                    </section>
-                </div>
-                <div class="4u 12u(mobile)">
-                    <section class="box style1">
-                        <span class="icon featured fa-shopping-cart"></span>
-                        <h3><a href="http://www.project-rainbow.org/site/index.php?action=downloads;sa=view;down=82">Server
-                            Shop</a></h3>
-                        <p>By DoingItWell</p>
-                    </section>
-                </div>
-                <div class="4u 12u(mobile)">
-                    <section class="box style1">
-                        <span class="icon featured fa-globe"></span>
-                        <h3><a href="http://www.project-rainbow.org/site/index.php?action=downloads;sa=view;down=66">RainbowEdit</a>
-                        </h3>
-                        <p>By DoingItWell</p>
-                    </section>
-                </div>
+        <div class="w3-third">
+            <div class="w3-card-2 w3-padding-top" style="min-height:260px">
+                <p><b>Customizable through plugins.</b></p>
+                <hr>
+                <span class="fa fa-comments"></span>
+                <h4><a href="#plugins" class="w3-btn">Plugins</a></h4><br>
             </div>
-            <div class="row">
-                <div class="4u 12u(mobile)">
-                    <section class="box style1">
-                        <span class="icon featured fa-thumbs-up"></span>
-                        <h3><a href="http://www.project-rainbow.org/site/downloads/?sa=view&down=84">Votifier</a></h3>
+        </div>
+    </div>
+    <div class="rainbow-padding" id="starting"></div>
+    
+    <!--Getting-Started-->
+    <div class="rainbow-padding"></div>
+    <div class="w3-row-padding w3-center w3-margin-top rainbow-row">
+        <h1 class="w3-text-white"><b>Getting Started</b></h1>
+        <h3 class="w3-text-white"><b>Follow these steps to setup your Rainbow server!</b></h3>
+        <div class="w3-third">
+            <div class="w3-card-2 w3-padding-top" style="min-height:260px">
+                <h4><span class="fa fa-download"></span>&nbsp;Step 1</h4><br>
+                <p>Get the latest files.</p>
+                <a href="https://ci.codecrafter47.de/job/Rainbow/lastSuccessfulBuild/" class="w3-btn">Download</a>
+ 
+            </div>
+        </div>
+        <div class="w3-third">
+            <div class="w3-card-2 w3-padding-top" style="min-height:260px">
+                <h4><span class="fa fa-gear"></span>&nbsp;Step 2</h4><br>
+                <p>Run Rainbow by</p>
+                <p>selecting the JAR in your server's control panel,</p>
+                <p>running the included start script.</p>
+            </div>
+        </div>
+        <div class="w3-third">
+            <div class="w3-card-2 w3-padding-top" style="min-height:260px">
+                <h4><span class="fa fa-wrench"></span>&nbsp;Step 3</h4><br>
+                <p>Customize your server by installing plugins</p> 
+                <p>or customizing the Rainbow.properties file.</p>
+            </div>
+        </div>
+    </div>
+    <div class="rainbow-padding" id="plugins"></div>
+    
+    <div class="w3-container rainbow-row">
+        <div class="w3-center">
+            <header>
+                <h2 class="w3-text-white"><b>These are the most popular plugins</b></h2>
+                <p class="w3-text-white"><b>Don't worry, there are plenty more!</b></p>
+            </header>
+            <div class="w3-container">
+                <div class="w3-row">
+                    <div class="rainbow-plugin">
+                        <span class="fa fa-heart"></span>
+                        <a class="w3-large" href="http://www.project-rainbow.org/site/index.php?action=downloads;sa=view;down=343">RainbowMarriage</a>
+                        <p>By DoingItWell</p>
+                    </div>
+                    <div class="rainbow-plugin">
+                        <span class="fa fa-shopping-cart"></span>
+                        <a class="w3-large" href="http://www.project-rainbow.org/site/index.php?action=downloads;sa=view;down=82">Server Shop</a>
+                        <p>By DoingItWell</p>
+                    </div>
+                    <div class="rainbow-plugin">
+                        <span class="fa fa-globe"></span>
+                        <a class="w3-large" href="http://www.project-rainbow.org/site/index.php?action=downloads;sa=view;down=66">RainbowEdit</a>
+                        <p>By DoingItWell</p>
+                    </div>
+                </div>
+                <div class="w3-row">
+                    <div class="rainbow-plugin">
+                        <span class="fa fa-thumbs-up"></span>
+                        <a class="w3-large" href="http://www.project-rainbow.org/site/downloads/?sa=view&down=84">Votifier</a>
                         <p>By coolv1994</p>
-                    </section>
-                </div>
-                <div class="4u 12u(mobile)">
-                    <section class="box style1">
-                        <span class="icon featured fa-gift"></span>
-                        <h3><a href="http://www.project-rainbow.org/site/index.php?action=downloads;sa=view;down=52">RainbowKits</a>
-                        </h3>
+                    </div>
+                    <div class="rainbow-plugin">
+                        <span class="fa fa-gift"></span>
+                        <a class="w3-large" href="http://www.project-rainbow.org/site/index.php?action=downloads;sa=view;down=52">RainbowKits</a>
                         <p>By DoingItWell</p>
-                    </section>
-                </div>
-                <div class="4u 12u(mobile)">
-                    <section class="box style1">
-                        <span class="icon featured fa-random"></span>
-                        <h3><a href="http://www.project-rainbow.org/site/index.php?action=downloads;sa=view;down=69">BukkitBridge</a>
-                        </h3>
+                    </div>
+                    <div class="rainbow-plugin">
+                        <span class="fa fa-random"></span>
+                        <a class="w3-large" href="http://www.project-rainbow.org/site/index.php?action=downloads;sa=view;down=69">BukkitBridge</a>
                         <p>By CodeCrafter47</p>
-                    </section>
+                    </div>
                 </div>
             </div>
-        </div>
-        <footer>
-            <p>Want more?</p>
-            <a href="http://www.project-rainbow.org/site/index.php?action=downloads" class="button big scrolly">You can
-                find all available plugins here!</a>
-        </footer>
-    </article>
-</div>
-
-<!-- Contribute -->
-<div class="wrapper style2">
-    <article id="contribute">
-        <header>
-            <h2>Contribute</h2>
-            <p>There are a number of ways how you can contribute to Rainbow:</p>
-        </header>
-        <div class="container">
-            <div class="row">
-                <div class="4u 12u(mobile)">
-                    <section class="box style1">
-                        <span class="icon featured fa-github"></span>
-                        <h3>Source Code</h3>
-                        <p>Are you a Java programmer? Want to contribute to the most ground-breaking project the
-                            Minecraft community has ever seen, or just love testing stuff to destruction and then
-                            writing long and detailed bug reports about it? Come get involved on GitHub!</p>
-                    </section>
-                </div>
-                <div class="4u 12u(mobile)">
-                    <section class="box style1">
-                        <span class="icon featured fa-wrench"></span>
-                        <h3>Plugin Maker</h3>
-                        <p>Are you a Java programmer? What to make an mod (aka addon/plugin) for Rainbow?</p>
-                    </section>
-                </div>
-                <div class="4u 12u(mobile)">
-                    <section class="box style1">
-                        <span class="icon featured fa-comments"></span>
-                        <h3>Forums</h3>
-                        <p>Looking for something more casual? Somewhere you can hang out with fellow Rainbowe users?
-                            Critique new plugin ideas and help people out with Rainbow? Look no further than the Rainbow
-                            Forums.</p>
-                    </section>
-                </div>
+            <div>
+                <a class="w3-btn w3-theme" href="http://www.project-rainbow.org/site/index.php?action=downloads">
+                    You can find all available plugins here!
+                </a>
+                <div class="rainbow-padding"></div>
             </div>
         </div>
-    </article>
-</div>
+    </div>
+    
+    <!--Contribute-->
+    <div class="rainbow-padding" id="contribute"></div>
+    <div class="w3-row-padding w3-center rainbow-row">
+        <h1 class="w3-text-white"><b>Contribute</b></h1>
+        <h3 class="w3-text-white"><b>There are a number of ways how you can contribute to Rainbow:</b></h3>
+        <div class="w3-third">
+            <div class="w3-card-2 w3-padding-top" style="min-height:360px">
+                <span class="fa fa-github"></span>
+                <h4>Source Code</h4><br>
+                <p>Are you a Java programmer?</p>
+                <p>Want to contribute to the most ground-breaking project the Minecraft community has ever seen</p>
+                <p>or just love testing stuff to destruction</p>
+                <p>then writing long and detailed bug reports about it?</p>
+                <p>Come get involved on <a href="https://github.com/codecrafter47/rainbow/">GitHub</a></p>
+ 
+            </div>
+        </div>
+        <div class="w3-third">
+            <div class="w3-card-2 w3-padding-top" style="min-height:360px">
+                <span class="fa fa-wrench"></span>
+                <h4>Plugin Maker</h4><br>
+                <p>Are you a Java programmer?</p>
+                <p>What to make an plugin (aka addon/mod) for Rainbow?</p>
+                <p>Have a look at our PluginAPI located in the Rainbow.zip</p>
+                <p>Or look at our 
+                    <a href="http://ci.codecrafter47.dyndns.eu/job/Rainbow/org.projectrainbow$PluginReference/javadoc/" class="w3-btn">Javadocs</a>&nbsp;!
+                </p>
+            </div>
+        </div>
+        <div class="w3-third">
+            <div class="w3-card-2 w3-padding-top" style="min-height:360px">
+                <span class="fa fa-comments"></span>
+                <h4>Forums</h4><br>
+                <p>Looking for something more casual?</p>
+                <p>Somewhere you can hang out with fellow Rainbow users?</p>
+                <p>Critique new plugin ideas and help people out with Rainbow?</p>
+                <p>Look no further than the <a href="http://www.project-rainbow.org/site/" class="w3-btn">Rainbow Forums.</a></p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="rainbow-padding" id="footer"></div>
 
-<!-- Credits -->
-<div class="wrapper style4">
-    <article id="contact" class="container 75%">
-        <ul id="copyright">
-            <li>Page created by Nicholas Mahoney & Isaiah Patton</li>
-            <li>Logo by BlackScorpion</li>
-            <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-        </ul>
-    </article>
-</div>
-
-<!-- Scripts -->
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/jquery.scrolly.min.js"></script>
-<script src="assets/js/skel.min.js"></script>
-<script src="assets/js/skel-viewport.min.js"></script>
-<script src="assets/js/util.js"></script>
-<!--[if lte IE 8]>
-<script src="assets/js/ie/respond.min.js"></script><![endif]-->
-<script src="assets/js/main.js"></script>
-
+    <!-- Footer -->
+    <footer class="w3-container w3-teal">
+        <p class="w3-center">
+            Page created by <a href="https://isaiahpatton.github.io/">Isaiah Patton</a>.
+            Using <a href="http://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a><br>
+            Rainbow Logo by BlackScorpion<br>
+            <a href="http://bugaos.weebly.com">
+                <img src="https://d1099yxbcpf3k9.cloudfront.net/theme/logo/thumbnail/40db4deee2905f6d9e44dbecba752185" width="75px" height="75px">
+            </a>
+        </p>
+    </footer>
 </body>
+<script>
+// Mobile logo & navbar display fix
+if (window.innerWidth < 600) {
+    document.getElementsByClassName("w3-navbar")[0].style.display = "none";
+    document.getElementById("logo").style.width = window.innerWidth - 50 + "px";
+}
+</script>
 </html>
