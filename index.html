@@ -4,9 +4,9 @@
     <title>Project Rainbow</title>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1" name="viewport">
-    <link href="http://www.w3schools.com/lib/w3.css" rel="stylesheet">
-    <link href="http://www.w3schools.com/lib/w3-theme-teal.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets\css\w3.css" rel="stylesheet">
+    <link href="assets\css\w3-theme-teal.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet"><!--CSS-file-in-assets-does-not-work-->
     <link href="assets\css\rainbow.css" rel="stylesheet">
 </head>
 <body>
@@ -44,31 +44,37 @@
             <h1 class="w3-xlarge w3-animate-bottom"><img id="logo" height="140px" src="http://www.project-rainbow.org/images/logo.png" width="550"></h1>
         </div>
     </header>
+    
+    <div class="top-row">
+        <div class="w3-row-padding w3-center w3-margin-top">
+            <div class="w3-first">
+                <div class="w3-card-2" style="min-height:10px">
+                    <p class="info"><b>A modded Minecraft server with lots of awesome built-in features, Customizable through plugins.</b></p>
+                </div>
+            </div>
+        </div>
 
-    <div class="w3-row-padding w3-center w3-margin-top">
-        <div class="w3-third">
-            <div class="w3-card-2 w3-padding-top" style="min-height:260px">
-                <p><b>A modded Minecraft server</b></p>
-                <hr></hr>
-                <span class="fa fa-download"></span>
-                <h4><a href="#starting" class="w3-btn">Get Rainbow</a></h4><br>
-                
+        <div class="w3-row-padding w3-center w3-margin-top">
+            <div class="w3-third">
+                <div class="w3-card-2 w3-padding-top" style="min-height:200px">
+                    <div class="rainbow-padding-16"></div>
+                    <span class="fa fa-download"></span>
+                    <h4><a href="#starting" class="w3-btn">Get Rainbow</a></h4><br>
+                </div>
             </div>
-        </div>
-        <div class="w3-third">
-            <div class="w3-card-2 w3-padding-top" style="min-height:260px">
-                <p><b>with lots of awesome built-in features.</b></p>
-                <hr>
-                <span class="fa fa-comments"></span>
-                <h4><a href="http://www.project-rainbow.org/site/" class="w3-btn">Forums</a></h4>
+            <div class="w3-third">
+                <div class="w3-card-2 w3-padding-top" style="min-height:200px">
+                    <div class="rainbow-padding-16"></div>
+                    <span class="fa fa-comments"></span>
+                    <h4><a href="http://www.project-rainbow.org/site/" class="w3-btn">Forums</a></h4>
+                </div>
             </div>
-        </div>
-        <div class="w3-third">
-            <div class="w3-card-2 w3-padding-top" style="min-height:260px">
-                <p><b>Customizable through plugins.</b></p>
-                <hr>
-                <span class="fa fa-comments"></span>
-                <h4><a href="#plugins" class="w3-btn">Plugins</a></h4><br>
+            <div class="w3-third">
+                <div class="w3-card-2 w3-padding-top" style="min-height:200px">
+                    <div class="rainbow-padding-16"></div>
+                    <span class="fa fa-comments"></span>
+                    <h4><a href="#plugins" class="w3-btn">Plugins</a></h4><br>
+                </div>
             </div>
         </div>
     </div>
@@ -84,7 +90,6 @@
                 <h4><span class="fa fa-download"></span>&nbsp;Step 1</h4><br>
                 <p>Get the latest files.</p>
                 <a href="https://ci.codecrafter47.de/job/Rainbow/lastSuccessfulBuild/" class="w3-btn">Download</a>
- 
             </div>
         </div>
         <div class="w3-third">
@@ -160,11 +165,11 @@
     <div class="rainbow-padding" id="contribute"></div>
     <div class="w3-row-padding w3-center rainbow-row">
         <h1 class="w3-text-white"><b>Contribute</b></h1>
-        <h3 class="w3-text-white"><b>There are a number of ways how you can contribute to Rainbow:</b></h3>
+        <h3 class="w3-text-white"><b>There are a number of ways you can contribute to Rainbow:</b></h3>
         <div class="w3-third">
             <div class="w3-card-2 w3-padding-top" style="min-height:360px">
                 <span class="fa fa-github"></span>
-                <h4>Source Code</h4><br>
+                <h4>SOURCE CODE</h4><br>
                 <p>Are you a Java programmer?</p>
                 <p>Want to contribute to the most ground-breaking project the Minecraft community has ever seen</p>
                 <p>or just love testing stuff to destruction</p>
@@ -176,7 +181,7 @@
         <div class="w3-third">
             <div class="w3-card-2 w3-padding-top" style="min-height:360px">
                 <span class="fa fa-wrench"></span>
-                <h4>Plugin Maker</h4><br>
+                <h4>PLUGIN MAKER</h4><br>
                 <p>Are you a Java programmer?</p>
                 <p>What to make an plugin (aka addon/mod) for Rainbow?</p>
                 <p>Have a look at our PluginAPI located in the Rainbow.zip</p>
@@ -188,7 +193,7 @@
         <div class="w3-third">
             <div class="w3-card-2 w3-padding-top" style="min-height:360px">
                 <span class="fa fa-comments"></span>
-                <h4>Forums</h4><br>
+                <h4>FORUMS</h4><br>
                 <p>Looking for something more casual?</p>
                 <p>Somewhere you can hang out with fellow Rainbow users?</p>
                 <p>Critique new plugin ideas and help people out with Rainbow?</p>
@@ -200,14 +205,11 @@
     <div class="rainbow-padding" id="footer"></div>
 
     <!-- Footer -->
-    <footer class="w3-container w3-teal">
+    <footer class="w3-container rainbow-background bg-width-full">
         <p class="w3-center">
             Page created by <a href="https://isaiahpatton.github.io/">Isaiah Patton</a>.
             Using <a href="http://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a><br>
             Rainbow Logo by BlackScorpion<br>
-            <a href="http://bugaos.weebly.com">
-                <img src="https://d1099yxbcpf3k9.cloudfront.net/theme/logo/thumbnail/40db4deee2905f6d9e44dbecba752185" width="75px" height="75px">
-            </a>
         </p>
     </footer>
 </body>

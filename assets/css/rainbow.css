@@ -7,9 +7,13 @@
         background-color: rgba(40, 40, 40, 0.6);
         color: white;
     }
+    .top-row .w3-card-2 {
+        color: white;
+        background-color: rgba(40, 40, 40, 0.7);
+    }
     
     body {
-        background: URL("http://project-rainbow.org/images/minecraft.png") no-repeat center center fixed; 
+        background: URL("../../images/minecraft.png") no-repeat center center fixed; 
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -18,7 +22,7 @@
 
     .w3-navbar {
         padding-top: 0px;
-        background-color: rgba(40, 40, 40, 0.4);
+        background-color: rgba(40, 40, 40, 0.5);
     }
     .w3-navbar {
         color: white;
@@ -47,9 +51,17 @@
        padding: 40px;
     }
     
+    .rainbow-padding-16 {
+       padding: 16px;
+    }
+    
     .rainbow-row {
         background-color: rgba(40, 40, 40, 0.3);
     }
     span.fa {
         font-size: 50px;
     }
+    
+    .rainbow-background { background-image: URL("../../images/rainbow.png"); }
+    .rainbow-background.bg-width-full { background-size: 100%; }
+    .info { padding: 10px; }
